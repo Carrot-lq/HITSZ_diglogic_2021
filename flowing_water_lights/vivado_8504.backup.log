@@ -1,0 +1,156 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 10 21:23:05 2021
+# Process ID: 8504
+# Current directory: C:/Users/Administrator/Downloads/diglogic/flowing_water_lights
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12220 C:\Users\Administrator\Downloads\diglogic\flowing_water_lights\flowing_water_lights.xpr
+# Log file: C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/vivado.log
+# Journal file: C:/Users/Administrator/Downloads/diglogic/flowing_water_lights\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/flowing_water_lights.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 10 21:23:25 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/flowing_water_lights.runs/impl_1/runme.log
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7k70tfbv676-1
+current_run [get_runs synth_2]
+set_property part xc7a100tfgg484-1 [current_project]
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Wed Nov 10 21:25:33 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/flowing_water_lights.runs/synth_2/runme.log
+[Wed Nov 10 21:25:33 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/flowing_water_lights.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0004.Hub_#0001
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/flowing_water_lights.runs/impl_2/flowing_water_lights.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1762.957 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_project holiday_lights C:/Users/Administrator/Downloads/diglogic/holiday_lights -part xc7a100tfgg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+add_files -norecurse C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.v
+file mkdir C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new
+close [ open C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new/pin.xdc w ]
+add_files -fileset constrs_1 C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new/pin.xdc
+close [ open C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new/clock.xdc w ]
+add_files -fileset constrs_1 C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new/clock.xdc
+update_compile_order -fileset sources_1
+current_project flowing_water_lights
+current_project holiday_lights
+current_project flowing_water_lights
+current_project holiday_lights
+current_project flowing_water_lights
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/Port_#0004.Hub_#0001
+close_project
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/flowing_water_lights.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 10 21:32:49 2021...
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 10 21:33:54 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.runs/synth_1/runme.log
+[Wed Nov 10 21:33:54 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 10 21:36:39 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.runs/synth_1/runme.log
+[Wed Nov 10 21:36:39 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn-DLC9-Port_#0004.Hub_#0001jsn2" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn-DLC9-Port_#0004.Hub_#0001jsn2" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn-DLC9-Port_#0004.Hub_#0001jsn2" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn-DLC9-Port_#0004.Hub_#0001jsn2jsn-DLC9-Port_#0003.Hub_#0001jsn3" may be locked by another hw_server.
+refresh_hw_server {localhost:3121}
+WARNING: [Labtoolstcl 44-27] No hardware targets exist on the server [localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the refresh_hw_server command to re-register the hardware targets.
+refresh_hw_server {localhost:3121}
+WARNING: [Labtoolstcl 44-27] No hardware targets exist on the server [localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the refresh_hw_server command to re-register the hardware targets.
+refresh_hw_server {localhost:3121}
+WARNING: [Labtoolstcl 44-27] No hardware targets exist on the server [localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the refresh_hw_server command to re-register the hardware targets.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn-DLC9-Port_#0004.Hub_#0001jsn2jsn-DLC9-Port_#0003.Hub_#0001jsn3" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn-DLC9-Port_#0004.Hub_#0001jsn2jsn-DLC9-Port_#0003.Hub_#0001jsn3jsn-DLC9-Port_#0001.Hub_#0001" may be locked by another hw_server.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 10 21:39:47 2021...

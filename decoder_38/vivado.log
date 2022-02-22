@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 10 20:44:55 2021
+# Process ID: 14748
+# Current directory: C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13944 C:\Users\Administrator\Downloads\数字逻辑实验\实验1 3-8译码器实现\decoder_38\decoder_38.xpr
+# Log file: C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/vivado.log
+# Journal file: C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/decoder_38.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Downloads/LQ/实验1 3-8译码器实现/decoder_38' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/decoder_38.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/decoder_38.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/decoder_38.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_38
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/decoder_38.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/decoder_38.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 345b2f427e8545cc8ad5174bd4ba701f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/decoder_38.v" Line 1. Module decoder_38 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder_38
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+系统找不到指定的路径。
+ERROR: [XSIM 43-3238] Failed to link the design.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/decoder_38.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Downloads/数字逻辑实验/实验1 3-8译码器实现/decoder_38/decoder_38.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 10 20:47:31 2021...

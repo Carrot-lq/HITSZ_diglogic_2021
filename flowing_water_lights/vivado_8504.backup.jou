@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 10 21:23:05 2021
+# Process ID: 8504
+# Current directory: C:/Users/Administrator/Downloads/diglogic/flowing_water_lights
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12220 C:\Users\Administrator\Downloads\diglogic\flowing_water_lights\flowing_water_lights.xpr
+# Log file: C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/vivado.log
+# Journal file: C:/Users/Administrator/Downloads/diglogic/flowing_water_lights\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/flowing_water_lights.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property part xc7a100tfgg484-1 [current_project]
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Downloads/diglogic/flowing_water_lights/flowing_water_lights.runs/impl_2/flowing_water_lights.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+create_project holiday_lights C:/Users/Administrator/Downloads/diglogic/holiday_lights -part xc7a100tfgg484-1
+add_files -norecurse C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.v
+file mkdir C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new
+close [ open C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new/pin.xdc w ]
+add_files -fileset constrs_1 C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new/pin.xdc
+close [ open C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new/clock.xdc w ]
+add_files -fileset constrs_1 C:/Users/Administrator/Downloads/diglogic/holiday_lights/holiday_lights.srcs/constrs_1/new/clock.xdc
+update_compile_order -fileset sources_1
+current_project flowing_water_lights
+current_project holiday_lights
+current_project flowing_water_lights
+current_project holiday_lights
+current_project flowing_water_lights
+close_project
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+refresh_hw_server {localhost:3121}
+refresh_hw_server {localhost:3121}
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
